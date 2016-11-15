@@ -9,17 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var playerDrawable: UIView!
+    
+    let
+    player = VLCMediaPlayer(),
+    media = VLCMedia(url: URL(string: "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"))
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad()        
+        player.media = media
+        player.drawable = playerDrawable
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func togglePlayer(_ sender: Any) {
+        
+        if player.isPlaying {
+            player.pause()
+            
+            let remaining = player.remainingTime
+            let time = player.time
+            
+            print("Paused at \(time) with \(remaining) time remaining")
+        }
+        else {
+            player.play()
+            print("Playing")
+        }
     }
-
-
 }
 
