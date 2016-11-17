@@ -35,8 +35,7 @@
 		495855181DDAEE23002CDA91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4958551B1DDAEE23002CDA91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4958551D1DDAEE23002CDA91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		495855231DDAEEFA002CDA91 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileVLCKit.framework; sourceTree = "<group>"; };
-		495855251DDAEEFA002CDA91 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = "Experiments-MobileVLCKit/MobileVLCKit.framework"; sourceTree = "<group>"; };
+		495855231DDAEEFA002CDA91 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = "Experiments-MobileVLCKit/MobileVLCKit.framework"; sourceTree = "<group>"; };
 		495855271DDAF282002CDA91 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		4958552A1DDAFA70002CDA91 /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = ../../../../usr/lib/libbz2.1.0.dylib; sourceTree = "<group>"; };
 		4958552B1DDAFA70002CDA91 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
@@ -80,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				495855101DDAEE23002CDA91 /* Experiments-MobileVLCKit */,
-				495855251DDAEEFA002CDA91 /* MobileVLCKit.framework */,
 				4958550F1DDAEE23002CDA91 /* Products */,
 				495855291DDAFA70002CDA91 /* Frameworks */,
 			);
@@ -100,10 +98,7 @@
 				495855111DDAEE23002CDA91 /* AppDelegate.swift */,
 				495855131DDAEE23002CDA91 /* ViewController.swift */,
 				495855151DDAEE23002CDA91 /* Main.storyboard */,
-				495855181DDAEE23002CDA91 /* Assets.xcassets */,
 				4958551A1DDAEE23002CDA91 /* LaunchScreen.storyboard */,
-				4958551D1DDAEE23002CDA91 /* Info.plist */,
-				495855271DDAF282002CDA91 /* Bridging-Header.h */,
 				495855281DDAFA37002CDA91 /* Supporting Files */,
 			);
 			path = "Experiments-MobileVLCKit";
@@ -112,7 +107,9 @@
 		495855281DDAFA37002CDA91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				495855231DDAEEFA002CDA91 /* MobileVLCKit.framework */,
+				495855181DDAEE23002CDA91 /* Assets.xcassets */,
+				4958551D1DDAEE23002CDA91 /* Info.plist */,
+				495855271DDAF282002CDA91 /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -125,6 +122,7 @@
 				4958552C1DDAFA70002CDA91 /* libc++.1.dylib */,
 				4958552D1DDAFA70002CDA91 /* libiconv.2.dylib */,
 				4958552E1DDAFA70002CDA91 /* libstdc++.6.0.9.dylib */,
+				495855231DDAEEFA002CDA91 /* MobileVLCKit.framework */,
 				4958552F1DDAFA70002CDA91 /* MediaPlayer.framework */,
 				495855301DDAFA70002CDA91 /* AVFoundation.framework */,
 				495855311DDAFA70002CDA91 /* CoreAudio.framework */,
@@ -334,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AW8RFH6CD4;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Experiments-MobileVLCKit",
@@ -352,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AW8RFH6CD4;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Experiments-MobileVLCKit",
@@ -384,6 +384,7 @@
 				495855221DDAEE23002CDA91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
